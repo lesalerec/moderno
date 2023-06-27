@@ -1,0 +1,37 @@
+$white: #fff;
+$black: #151515;
+$accent: #8bc34a;
+$orange: #e85647;
+$default: #707070;
+$title: #263238;
+$bg: #f4f6f5;
+
+%roboto-400 {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%roboto-500 {
+  font-family: 'Robotor-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%roboto-700 {
+  font-family: 'Roboto-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%raleway-700 {
+  font-family: 'Raleway-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%openSans-600 {
+  font-family: 'OpenSans-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%lato-600 {
+  font-family: 'Lato-Semibold', sans-serif;
+  font-weight: 600;
+}
