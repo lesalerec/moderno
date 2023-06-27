@@ -5,81 +5,143 @@
 @import 'reset';
 
 .header {
+  &__top {
+  }
 
-		&__top {
-		}
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+  }
 
-		&__top-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 90px;
-		}
-
-		&__text {
-      margin-left: auto;
-      margin-right: 50px;
-      color: $link;
-      span {
-        color: $orange;
-      }
-		}
-
-		&__phone {
-      color: inherit;
-		}
-
-		&__box {
+  &__text {
+    margin-left: auto;
+    margin-right: 50px;
+    color: $link;
+    span {
+      color: $orange;
     }
-    
-		&__btn {
-      padding: 6px;
-      width: 72px;
-      border-radius: 4px;
-      text-align: center;
-      color: $white;
-      font-size: 12px;
-		}
-		&__btn-login {
-      background-color: $accent;
-		}
-		&__btn-register {
-      background-color: $orange;
-      margin-left: 7px;
-		}
+  }
 
-		&__menu {
-      background-color: $bgBlack;
-		}
+  &__phone {
+    color: inherit;
+  }
+
+  &__box {
+  }
+
+  &__btn {
+    padding: 6px;
+    width: 72px;
+    border-radius: 4px;
+    text-align: center;
+    color: $white;
+    font-size: 12px;
+  }
+  &__btn-login {
+    background-color: $accent;
+  }
+  &__btn-register {
+    background-color: $orange;
+    margin-left: 7px;
+  }
+
+  &__menu {
+    background-color: $bgBlack;
+  }
 }
 
 .logo {
+  &__link {
+  }
 
-		&__link {
-		}
-
-		&__img {
-		}
+  &__img {
+  }
 }
 .basket {
 }
 .menu {
-  
   &__list {
-      height: 60px;
-      display: flex;
-      align-items: center;
-      gap: 40px;
-		}
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
 
-		&__list-item {
-		}
+  &__list-item {
+  }
 
-		&__list-link {
-      color: $white;
-      @extend %roboto-500;
-		}
+  &__list-link {
+    color: $white;
+    @extend %roboto-500;
+  }
 }
 
+.search {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 533px;
+  &__inner {
+    padding: 145px 0 100px;
+    color: $white;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 48px;
+    @extend %roboto-700;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 20px;
+    margin-bottom: 50px;
+    @extend %roboto-500;
+  }
+
+  &__form {
+    max-width: 670px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__input {
+    box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    height: 56px;
+    border: none;
+    font-size: 14px;
+    @extend %roboto-500;
+    padding-left: 25px;
+    padding-right: 60px;
+    &::placeholder {
+      color: $paceholder;
+      @extend %roboto-500;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    padding: 20px;
+    line-height: 0;
+    fill: $default;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  }
+
+  &__btn-img {
+    width: 20px;
+    height: 20px;
+  }
+}
+.container {
+}
 
 @import 'media';
