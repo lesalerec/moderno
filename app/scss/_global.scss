@@ -15,7 +15,14 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-
+.container-fluid {
+  max-width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+  @media (max-width: 720px) {
+    padding: 0 15px;
+  }
+}
 a {
   font-size: 15px;
   line-height: 1.6;
@@ -23,11 +30,17 @@ a {
   color: $default;
   display: inline-block;
 }
-
 body {
   font-size: 15px;
   line-height: 1.6;
   @extend %roboto-400;
   font-style: normal;
   color: $default;
+}
+.title {
+  text-align: center;
+  color: $title;
+  @extend %roboto-700;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
