@@ -4,6 +4,82 @@
 @import 'fonts';
 @import 'reset';
 
+.header {
+
+		&__top {
+		}
+
+		&__top-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 90px;
+		}
+
+		&__text {
+      margin-left: auto;
+      margin-right: 50px;
+      color: $link;
+      span {
+        color: $orange;
+      }
+		}
+
+		&__phone {
+      color: inherit;
+		}
+
+		&__box {
+    }
+    
+		&__btn {
+      padding: 6px;
+      width: 72px;
+      border-radius: 4px;
+      text-align: center;
+      color: $white;
+      font-size: 12px;
+		}
+		&__btn-login {
+      background-color: $accent;
+		}
+		&__btn-register {
+      background-color: $orange;
+      margin-left: 7px;
+		}
+
+		&__menu {
+      background-color: $bgBlack;
+		}
+}
+
+.logo {
+
+		&__link {
+		}
+
+		&__img {
+		}
+}
+.basket {
+}
+.menu {
+  
+  &__list {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+		}
+
+		&__list-item {
+		}
+
+		&__list-link {
+      color: $white;
+      @extend %roboto-500;
+		}
+}
 
 
 @import 'media';
