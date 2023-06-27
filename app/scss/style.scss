@@ -248,6 +248,7 @@
   &__item-author {
     font-size: 14px;
     @extend %roboto-500;
+    // @include f700;
     color: $link;
     display: flex;
     align-items: center;
@@ -305,7 +306,7 @@
     cursor: pointer;
     background-color: #e8e8e8;
     opacity: 1;
-    transition: all ease .3s;
+    transition: all ease 0.3s;
   }
 
   .swiper-pagination-bullet-active {
@@ -313,6 +314,104 @@
   }
 }
 
+.advantages {
+  background-color: $title;
+  padding: 110px 0;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  &__title {
+    color: $white;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    max-width: 370px;
+    text-align: center;
+    &:hover {
+      .advantages__images {
+        background-color: $accent;
+      }
+      .advantages__images-icon {
+        fill: $white;
+      }
+      .advantages__item-title {
+        color: $accent;
+      }
+    }
+  }
+
+  &__images {
+    width: 114px;
+    height: 114px;
+    background-color: $white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    transition: all ease 0.3s;
+  }
+
+  &__images-icon {
+    width: 72px;
+    height: 72px;
+    fill: $black;
+    transition: all ease 0.3s;
+  }
+
+  &__item-title {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: $white;
+    @extend %roboto-500;
+    transition: all ease 0.3s;
+  }
+
+  &__item-text {
+    color: #b0bec5;
+  }
+}
+
+.author {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+		&__box {
+      max-width: 650px;
+      min-height: 215px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $accent;
+		}
+
+		&__title {
+      font-size: 30px;
+      color: $white;
+      max-width: 260px;
+      margin-right: 45px;
+      @extend %roboto-400;
+      span {
+        @extend %roboto-700;
+      }
+		}
+
+		&__link {
+      font-size: 18px;
+      padding: 14px 40px;
+      background-color: $white;
+      color: $title;
+		}
+}
+
+
 @import 'media';
-
-

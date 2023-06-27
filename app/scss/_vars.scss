@@ -8,6 +8,21 @@ $bg: #f4f6f5;
 $link: #546e7a;
 $paceholder: #90a4ae;
 
+@mixin f400 {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-weight: 400;
+}
+
+@mixin f500 {
+  font-family: 'Roboto-Medium', sans-serif;
+  font-weight: 500;
+}
+
+@mixin f700 {
+  font-family: 'Roboto-Bold', sans-serif;
+  font-weight: 700;
+}
+
 %roboto-400 {
   font-family: 'Roboto-Regular', sans-serif;
   font-weight: 400;
