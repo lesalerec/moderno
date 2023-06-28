@@ -23,6 +23,10 @@ $paceholder: #90a4ae;
   font-weight: 700;
 }
 
+@mixin ic {
+  font-family: 'icomoon';
+}
+
 %roboto-400 {
   font-family: 'Roboto-Regular', sans-serif;
   font-weight: 400;
